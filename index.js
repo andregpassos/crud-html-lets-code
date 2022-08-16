@@ -35,8 +35,7 @@ button.addEventListener("click", (e) => {
 
     if (localStorage.basicPersonData !== undefined) {
       if (localStorage.basicPersonData.length !== 0) {
-        console.log(localStorage.basicPersonData.length);
-        localStrgPersonData.push(localStorage.basicPersonData);
+        localStrgPersonData.unshift(localStorage.basicPersonData);
       }
     }
 
