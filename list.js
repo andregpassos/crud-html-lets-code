@@ -3,13 +3,17 @@ const basicPersonData = localStorage.basicPersonData.split(",");
 const infoPerson = ["nome", "idade", "profissão", "coordenação"];
 
 let j = 0;
+let numbConta = 2;
+
 for (let i = 0; i < basicPersonData.length; i++) {
   let li = document.createElement("li");
 
   if (j === 4) {
     j = 0;
-    let br = document.createElement("br");
-    lista.appendChild(br);
+    let p = document.createElement("p");
+    p.innerText = "Conta " + numbConta;
+    numbConta++;
+    lista.appendChild(p);
   }
 
   li.innerText = `${infoPerson[j]}: ${basicPersonData[i]}`;
