@@ -1,15 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Marker+Hatch&display=swap");
 
 html {
-  background-color: black;
+  background-color: yellow;
 }
 
 h1 {
-  font-family: 'Rubik Marker Hatch', cursive;
+  font-family: "Rubik Marker Hatch", cursive;
   font-weight: normal;
   font-size: 50px;
   text-align: center;
-  color: white;
+  color: blue;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: "Rubik Marker Hatch", cursive;
+  font-weight: normal;
+  text-align: center;
+  color: blue;
+  margin-top: 0;
 }
 
 .inputContainer {
@@ -20,33 +29,93 @@ h1 {
 }
 
 .textLabel {
-  color: white;
+  color: blue;
   text-align: left;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-bottom: 7px;
   margin-top: 7px;
 }
 
-#inputBox {
+.inputBox,
+.selectBox {
   padding: 16px 20px;
   border: none;
   border-radius: 4px;
-  background-color: lightgray;
+  background-color: rgb(197, 197, 1);
+}
+
+.conditionsLabel {
+  font-size: 14px;
+}
+
+.fieldset {
+  margin-top: 10px;
+}
+
+/* CSS */
+.buttonSubmit {
+  margin-top: 10px;
+  background-image: linear-gradient(#42a1ec, #0070c9);
+  border: 1px solid #0077cc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  direction: ltr;
+  display: block;
+  font-family: "SF Pro Text", "SF Pro Icons", "AOS Icons", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  line-height: 1.47059;
+  min-width: 30px;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.buttonSubmit:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.buttonSubmit:hover {
+  background-image: linear-gradient(#51a9ee, #147bcd);
+  border-color: #1482d0;
+  text-decoration: none;
+}
+
+.buttonSubmit:active {
+  background-image: linear-gradient(#3d94d9, #0067b9);
+  border-color: #006dbc;
+  outline: none;
+}
+
+.buttonSubmit:focus {
+  box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+  outline: none;
 }
 
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: rgb(0, 102, 255);
+  color: white;
   opacity: 1;
   /* Firefox */
 }
 
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: rgb(0, 102, 255);
+  color: white;
 }
 
 ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: rgb(0, 102, 255);
+  color: white;
 }
