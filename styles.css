@@ -21,6 +21,13 @@ h2 {
   margin-top: 0;
 }
 
+.listaContas {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 30rem;
+}
+
 .inputContainer {
   display: flex;
   flex-direction: column;
@@ -74,7 +81,6 @@ h2 {
   overflow: visible;
   padding: 4px 15px;
   text-align: center;
-  vertical-align: baseline;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
